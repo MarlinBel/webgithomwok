@@ -1,18 +1,25 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  .home
+
+    TOPSTUFF
+    BOTTONS
+
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import TOPSTUFF from '@/components/TOPSTUFF.vue'
+import BOTTONS from '@/components/BOTTONS.vue'
 
 export default {
-  name: 'Home',
+  // name: 'Home',
   components: {
-    HelloWorld
+    TOPSTUFF,
+    BOTTONS,
   }
 }
 </script>
+<style lang="sass">
+.home
+  min-height: 2200px
+</style>
