@@ -22,6 +22,7 @@ el-menu(
     text-color= "#1d3557",
     background-color="rgba(255,255,255,0.2)",
     letter-spacing="10%"
+	font-family="Microsoft YaHei"
 ) 
 	.toptop0
 		el-submenu.toptop(index="4", menu-trigger="hover")
@@ -116,6 +117,7 @@ el-menu(
 
 <style lang="sass">
 .toptop0
+	font-family: Microsoft YaHei
 	display: flex
 	flex-direction: row
 	//border: 1px solid red
@@ -240,6 +242,7 @@ el-menu(
 
 .nthuipta:hover
 	opacity: 100%
+	font-family: Microsoft YaHei
 // .topbottons
 // 	cursor: pointer
 // 	//border: 1px solid orange

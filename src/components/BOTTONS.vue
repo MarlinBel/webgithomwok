@@ -1,23 +1,23 @@
 <template lang="pug">
 .titleFlex
 	.secbotton
-		.title 最新消息
-		.text 活動與獲獎
+		.title1 最 新 消 息
+		.text1 活 動 & 獲 獎
 		.seccontentsha
 		.seccontent
 			.TITLE 院學士班最新訊息
 			.SUBTITLE 新消息，看這裡！
-			.PIC
-			.PIC
-			.PIC
-			.PIC
-			.PIC
+			.PIC1
+			.SUBTITLE 【獲獎】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展 得獎名單
+			.PIC2
+			.SUBTITLE 【獲獎】2020春之清華 – 藝術卓越獎 科技藝術類 得獎名單
 
 	
 	.fstbotton
 		.iimmg
-		.title 學士班
-		.text 特色與核心
+		.title1 學 士 班
+		.aaa  
+		.text1 特 色 & 核 心
 		.contentsha
 		.content
 			.TITLE1 學士班特色
@@ -31,6 +31,35 @@
 </template>
 
 <style lang="sass">
+	
+// .title2
+// 	position: relative
+// 	top: 40%
+// 	font-weight: bold
+// 	color: #ffc6ff
+// 	// -webkit-text-stroke: 0.01px rgba(0, 0, 0, 0)
+// 	// -webkit-text-fill-color: transparent
+.title1
+	position: relative
+	top: 40%
+	font-weight: bold
+	color: #1d3557
+
+.text1
+	font-size: 8px
+	font-weight: bold
+	position: relative
+	top: 45%
+	color: #1d3557
+
+// .text2
+// 	font-size: 8px
+// 	font-weight: bold
+// 	position: relative
+// 	top: 45%
+// 	color: #ffc6ff
+.titleFlex
+	font-family: Microsoft YaHei
 .fstbotton
 	display: flex
 	flex-direction: column
@@ -173,13 +202,6 @@
 	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
 	-o-transition-duration: 1s
 
-.title
-	position: relative
-	top: 40%
-
-.text
-	position: relative
-	top: 40%
 
 .secbotton
 	display: flex
@@ -270,9 +292,9 @@
 	-webkit-transition-duration: 1s
 	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
 .SUBTITLE
-	border: 20px solid rgba(0, 0, 0, 0)
+	border: 10px solid rgba(0, 0, 0, 0)
 	font-size: 0px
-	top: 0%
+	top: 10%
 	opacity: 0
 	transition-property: opacity, width ,height,left,font-size,color,z-index,top
 	transition-duration: 1s
@@ -282,17 +304,42 @@
 	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
 	-o-transition-duration: 1s
 
-.PIC
-	border: 20px solid rgba(0, 0, 0, 1)
+.PIC1
+	//border: 20px solid rgba(0, 0, 0, 0)
 	font-size: 0px
 	top: 0%
+	left: 50%
 	opacity: 0
-	transition-property: opacity, width ,height,left,font-size,color,z-index,top
+	width: 10%
+	height: 0%
+	background-color: rgba(0, 0, 0, 0)
+	background-size: cover
+	background-image: url('https://upload.cc/i1/2020/12/24/qloj6h.png')
+	transition-property: opacity, width ,height,left,font-size,color,z-index,top,background-color
 	transition-duration: 1s
 	transition-timing-function: ease-out
-	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top,background-color
 	-webkit-transition-duration: 1s
-	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
+	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top,background-color
+	-o-transition-duration: 1s
+
+.PIC2
+	//border: 20px solid rgba(0, 0, 0, 0)
+	font-size: 0px
+	top: 0%
+	left: 50%
+	opacity: 0
+	width: 10%
+	height: 0%
+	background-color: rgba(0, 0, 0, 0)
+	background-size: cover
+	background-image: url('https://upload.cc/i1/2020/12/24/M7Xm2x.jpg')
+	transition-property: opacity, width ,height,left,font-size,color,z-index,top,background-color
+	transition-duration: 1s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top,background-color
+	-webkit-transition-duration: 1s
+	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top,background-color
 	-o-transition-duration: 1s
 
 .fstbotton:hover
@@ -403,13 +450,25 @@
 		border: 20px solid rgba(0, 0, 0, 0)
 		position: relative
 		opacity: 100
-		top: 3%
+		top: 2%
 		font-size: 10px
-	.PIC
-		border: 20px solid rgba(0, 0, 0, 1)
+	.PIC1
+		//border: 20px solid rgba(0, 0, 0, 1)
+		width: 100%
+		height: 31%
+		left: 0%
 		position: relative
 		opacity: 100
 		top: 3%
 		font-size: 10px
-	
+
+	.PIC2
+		//border: 20px solid rgba(0, 0, 0, 1)
+		width: 100%
+		height: 31%
+		left: 0%
+		position: relative
+		opacity: 100
+		top: 4%
+		font-size: 10px
 </style>
