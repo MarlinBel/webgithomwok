@@ -351,6 +351,7 @@
 	z-index: 25
 	opacity: 90%
 	color: rgba(0, 0, 0, 0)
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px
 	.content
 		top: 15%
 		width: 40%
@@ -412,6 +413,7 @@
 	z-index:20
 	opacity: 90%
 	color: rgba(0, 0, 0, 0)
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px
 	.seccontent
 		top: 15%
 		width: 40%
