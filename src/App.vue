@@ -13,8 +13,7 @@
   -moz-osx-font-smoothing: grayscale
   text-align: center
   color: #2c3e50
-  background-image: url('https://upload.cc/i1/2020/12/21/jQpAUT.jpg')
-  background-size: 100% 100%
+  background: rgb( 10, 10, 10)
   //position: relative
   background-attachment: scroll
   

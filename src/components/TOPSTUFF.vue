@@ -1,263 +1,584 @@
 <template lang="pug">
-//- .toptop
-//- 	.topformat
-//- 		.topbottons
-
-
-//- 	//- el-dropdown.topformat(v-for="item in list")
-//- 	//- 	span.topbottons.el-dropdown-link {{item.title}}
-//- 	//- 	//- i.el-icon-arrow-down.el-icon--right
-//- 	//- 	el-dropdown-menu(slot="dropdown")
-//- 	//- 		el-dropdown-item.dropdown(v-for="option in item.secondtitle") {{option}}
-//- 	el-menu.topformat.el-menu-demo(:default-active="activeIndex" mode="horizontal" @select="handleSelect" v-for="item in list" background-color="#caf0f8")
-//- 		el-submenu(index="2")
-//- 			template.topbottons(slot="title") {{item.title}}
-//- 			el-menu-item.dropdown(index="2-1")(v-for="option in item.secondtitle") {{option}}
-
-el-menu(
-    :default-active="activeIndex",
-    menu-trigger="hover",
-    mode="horizontal",
-    @select="handleSelect",
-    text-color= "#1d3557",
-    background-color="rgba(255,255,255,0.2)",
-    letter-spacing="10%"
-	font-family="Microsoft YaHei"
-) 
-	.toptop0
-		el-submenu.toptop(index="4", menu-trigger="hover")
-			template.nthuipta(slot="title") 招生資訊
-			el-menu-item.nthuipta(index="4-1") 春之清華卓越獎五名
-			el-menu-item.nthuipta(index="4-2") 學士班臉書粉絲頁
-			el-submenu.nthuipta(index="4-3", menu-trigger="hover") 
-				template.nthuipta(slot="title") ２０２０招生資訊
-				el-menu-item(index="4-3-1") ２０２０錄取名單	
-				el-menu-item(index="4-3-2") ２０２０招生簡章
-				el-menu-item(index="4-3-3") ２０２０個人申請第二階段甄選注意事項
-				el-menu-item(index="4-3-3") ２０２０報名繳交資料
-				el-menu-item.nthuipta(index="4-4") 招生Ｑ＆Ａ
-			el-submenu.nthuipta(index="4-5", menu-trigger="hover") 
-				template(slot="title") 過往招生資訊
-				el-submenu.nthuipta(index="4-5-1", menu-trigger="hover") 
-					template.nthuipta(slot="title") ２０１９年招生資訊
-					el-menu-item(index="4-5-1-1") ２０１９錄取名單
-					el-menu-item(index="4-5-1-2") ２０１９招生簡章
-					el-menu-item(index="4-5-1-3") ２０１９個人申請第二階段甄選注意事項
-					el-menu-item(index="4-5-1-4") ２０１９報名繳交資料
-				el-submenu.nthuipta(index="4-5-2", menu-trigger="hover") 
-					template.nthuipta(slot="title") ２０１８年招生資訊
-					el-menu-item(index="4-5-2-1") ２０１８錄取名單
-					el-menu-item(index="4-5-2-2") ２０１８招生簡章
-					el-menu-item(index="4-5-2-3") ２０１８個人申請第二階段甄選注意事項
-					el-menu-item(index="4-5-2-4") ２０１８報名繳交資料
-		el-submenu.toptop1(index="5", menu-trigger="hover") 
-			template.nthuipta(slot="title") 學士班
-			el-menu-item.nthuipta(index="5-1") 學士班簡介
-			el-menu-item.nthuipta(index="5-2") 學士班課程
-			el-menu-item.nthuipta(index="5-3") 國際交換
-			el-menu-item.nthuipta(index="5-4") 藝術學院大樓(New)
-		el-submenu.toptop2(index="6", menu-trigger="hover") 
-			template.nthuipta(slot="title") 師資
-			el-menu-item.nthuipta(index="6-1") 學士班師資
-			el-menu-item.nthuipta(index="6-2") 藝設系師資
-			el-menu-item.nthuipta(index="6-3") 音樂系師資
-			el-menu-item.nthuipta(index="6-4") 電資學院師資
-		el-submenu.toptop3(index="7", menu-trigger="hover") 
-			template.nthuipta(slot="title") 科藝賞析
-			el-menu-item.nthuipta(index="7-1") 數位文創作品
-			el-menu-item.nthuipta(index="7-2") 互動藝術作品
-			el-menu-item.nthuipta(index="7-3") 動力藝術作品
-			el-menu-item.nthuipta(index="7-4") 聲音藝術作品
-			el-menu-item.nthuipta(index="7-4") 科技表演藝術
-//-   .header
-//-     .rect
-//-     .circle.circle1 核心能力
-//-     .circle.circle2 學士班特色
-//-     .header_word
-//-       .header_word1 國立清華大學
-//-       .header_word2 藝術學院學士班
-//-   .news
-//-     .news_rect_word 最新消息
-//-     .news_flex
-//-       .news_item(v-for="item in newsList")
-//-         .news_img(:style="{ backgroundImage: 'url(' + item.img + ')' }")
-//-         .news_text {{ item.text }}
-//-   .works
-//-     .works_rect_word 優秀作品
-//-     .works_flex
-//-       .works_item(v-for="item in worksList")
-//-         .works_img(:style="{ backgroundImage: 'url(' + item.img + ')' }")
-//-         .works_text {{ item.text }}
-//-   .scho
-//-     .scho_rect_word 最酷的系，要的是最酷的你！
-//-     .scho_rect
-//-       .scho_img
-//-   router-view
+.TOPSTUFF
+	.colu1
+	.colu2
+	.colu3
+	.colu4
+	.colubutt
+	.Block1
+		.litlblockup
+		.litlblockdown
+		.LINKER1
+			router-link(tag="LINKER1", to="/") 主頁
+	.Block2
+		.litlblockup2
+		.litlblockdown2
+		.LINKER2
+			router-link(tag="LINKER2", to="/about") 參賽&助力
+	.Block3
+		.litlblockup3
+		.litlblockdown3
+		.LINKER3 助力規則
+	.Block4
+		.litlblockup4
+		.litlblockdown4
+		.LINKER4 報名參賽
+	.Block5
+		.litlblockup5
+		.litlblockdown5
+		.LINKER5 相關節目
+	//- .columnbak
 </template>
 
-
-<script>
-// export default {
-// 	name: 'Contact',
-// 	props: {
-// 		msg: String
-// 	},
-// 	data(){
-// 		return{
-// 			list:[
-// 				{title:'招生'},
-// 				{title:'學士班'},
-// 				{title:'師資'},
-// 				{title:'科藝賞析'},
-// 			]
-// 		}
-// 	}
-// }
-</script>
-
 <style lang="sass">
-.toptop0
+.TOPSTUFF 
 	font-family: Microsoft YaHei
-	display: flex
-	flex-direction: row
-	//border: 1px solid red
-	justify-content: space-between
-	position: fixed
-	width: 100%
-	height: 8%
-	top: 0px
-	z-index: 1 
-	background-color: #caf0f8
-	opacity: 30%
-	transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	transition-duration: 0.5s
-	transition-timing-function: ease-out
-	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-webkit-transition-duration: 0.5s
-	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-o-transition-duration: 0.5s
+	font-size: 28px
+	color: rgb( 225, 225, 225)
+	opacity: 100%
+	z-index: 999
+.TOPSTUFF:hover
+	color: rgb( 255, 255, 255)
 
-.toptop
-	display: flex
-	flex-direction: row
-	//border: 1px solid red
-	justify-content: space-between
+.LINKER1
 	position: fixed
-	left: 10%
+	z-index: 9999
+	top: 2%
+	cursor: pointer
+	font-size: 30px
+	letter-spacing: 40px
+	left: 6%
+	opacity: 70%
+
+.LINKER2
+	cursor: pointer
+	position: fixed
+	z-index: 9999
+	top: 2.3%
+	letter-spacing: 18px
+	left: 23.5%
+	opacity: 70%
+
+.LINKER3
+	position: fixed
+	z-index: 9999
+	top: 2.3%
+	letter-spacing: 20px
+	left: 44.5%
+	opacity: 70%
+
+.LINKER4
+	position: fixed
+	z-index: 9999
+	top: 2.3%
+	letter-spacing: 20px
+	left: 64.5%
+	opacity: 70%
+
+.LINKER5
+	position: fixed
+	z-index: 9999
+	top: 2.2%
+	font-size: 29px
+	letter-spacing: 20px
+	left: 84.5%
+	opacity: 70%
+	
+	
+.Block1
+	position: fixed
+	z-index: 9999
+	background: rgba( 255, 255, 255, 0)
+	width: 20%
+	height: 10%
 	top: 0%
-	z-index: 100
-	background-color: #caf0f8
-	opacity: 10%
-	transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	transition-duration: 0.5s
+	left: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
 	transition-timing-function: ease-out
-	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-webkit-transition-duration: 0.5s
-	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-o-transition-duration: 0.5s
-	color: rgba(0, 0, 0, 1)
-
-.toptop1
-	display: flex
-	flex-direction: row
-	//border: 1px solid red
-	justify-content: space-between
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockup
 	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
 	top: 0%
-	left: 35%
-	z-index: 100
-	background-color: #caf0f8
-	opacity: 10%
-	transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	transition-duration: 1s
+	left: 0%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
 	transition-timing-function: ease-out
-	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-webkit-transition-duration: 1s
-	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-o-transition-duration: 1s
-
-.toptop2
-	display: flex
-	flex-direction: row
-	//border: 1px solid red
-	justify-content: space-between
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockdown
 	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 0%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.Block1:hover
+	.litlblockdown
+		opacity: 100%
+		height: 3%
+		top: 7%
+	.litlblockup
+		opacity: 100%
+		height: 3%
+	.LINKER1
+		opacity: 100%
+
+.Block2
+	position: fixed
+	z-index: 9999
+	background: rgb( 255, 255, 255, 0)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 20%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockup2
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 20%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockdown2
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	// border: 1px solid red
+	height: 10%
+	top: 0%
+	left: 20%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.Block2:hover
+	.litlblockdown2
+		opacity: 100%
+		height: 3%
+		top: 7%
+	.litlblockup2
+		opacity: 100%
+		height: 3%
+	.LINKER2
+		opacity: 100%
+
+.Block3
+	position: fixed
+	z-index: 9999
+	background: rgb( 255, 255, 255, 0)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 40%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockup3
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 40%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockdown3
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 40%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.Block3:hover
+	.litlblockdown3
+		opacity: 100%
+		height: 3%
+		top: 7%
+	.litlblockup3
+		opacity: 100%
+		height: 3%
+	.LINKER3
+		opacity: 100%
+
+.Block4
+	position: fixed
+	z-index: 999
+	background: rgb( 255, 255, 255, 0)
+	width: 20%
+	height: 10%
 	top: 0%
 	left: 60%
-	z-index: 100
-	background-color: #caf0f8
-	opacity: 10%
-	transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	transition-duration: 1s
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
 	transition-timing-function: ease-out
-	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-webkit-transition-duration: 1s
-	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
-	-o-transition-duration: 1s
-
-.toptop3
-	display: flex
-	flex-direction: row
-	//border: 1px solid red
-	justify-content: space-between
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockup4
 	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
 	top: 0%
-	left: 85%
-	z-index: 100
-	background-color: #caf0f8
+	left: 60%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockdown4
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 60%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.Block4:hover
+	.litlblockdown4
+		opacity: 100%
+		height: 3%
+		top: 7%
+	.litlblockup4
+		opacity: 100%
+		height: 3%
+	.LINKER4
+		opacity: 100%
+
+
+.Block5
+	position: fixed
+	z-index: 999
+	background: rgb( 255, 255, 255, 0)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 80%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockup5
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 80%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.4s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.4s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.4s
+.litlblockdown5
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255, 0.2)
+	width: 20%
+	height: 10%
+	top: 0%
+	left: 80%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.Block5:hover
+	.litlblockdown5
+		opacity: 100%
+		height: 3%
+		top: 7%
+	.litlblockup5
+		opacity: 100%
+		height: 3%
+	.LINKER5
+		opacity: 100%
+
+.colu1
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255)
+	width: 0.2%
+	height: 6%
+	top: 2%
+	left: 20%
+	animation-name: downward
+	animation-duration: 2s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-in-out
+
+.colu2
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255)
+	width: 0.2%
+	height: 6%
+	top: 2%
+	left: 40%
+	animation-name: downward
+	animation-duration: 2s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-in-out
+
+.colu3
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255)
+	width: 0.2%
+	height: 6%
+	top: 2%
+	left: 60%
+	animation-name: downward
+	animation-duration: 2s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-in-out
+
+.colu4
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255)
+	width: 0.2%
+	height: 6%
+	top: 2%
+	left: 80%
+	animation-name: downward
+	animation-duration: 2s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-in-out
+
+.colubutt
+	position: fixed
+	z-index: 1000
+	background: rgb( 255, 255, 255)
+	width: 100%
+	height: 0.6%
+	top: 10%
+	left: 0%
+	animation-name: downward
+	animation-duration: 2s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-in-out
+
+.columnbak
+	position: fixed
+	z-index: 999
+	background: rgba( 255, 255, 255, 0.3)
+	width: 100%
+	height: 10%
+	top: 0%
 	opacity: 10%
-	transition-property: opacity, width ,height,left,font-size,color,z-index,top
+	left: 0%
+	animation-name: downward
+	animation-duration: 2s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-in-out
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 1s
 	transition-timing-function: ease-out
-	-webkit-transition-property: opacity, width ,height,left,font-size,color,z-index,top
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	-webkit-transition-duration: 1s
-	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	-o-transition-duration: 1s
 
-.topformat
-	//border: 1px solid blue
-	width: 1340px
-	height: 45px
-	display: flex
-	flex-direction: row
-
-.toptop0:hover 
-	opacity: 90%
-	.toptop
-		opacity: 70%
-	.toptop1
-		opacity: 70%
-	.toptop2
-		opacity: 70%
-	.toptop3
-		opacity: 70%
-.toptop:hover
-	opacity: 100%
-.toptop1:hover
-	opacity: 100%
-.toptop2:hover
-	opacity: 100%
-.toptop:hover
+.columnbak:hover
 	opacity: 100%
 
-.nthuipta:hover
-	opacity: 100%
-	font-family: Microsoft YaHei
-// .topbottons
-// 	cursor: pointer
-// 	//border: 1px solid orange
-// 	width: fit-content
-// 	height: 40px
-// 	position: relative
-// 	top: 35px
-// 	left: 50%
-// 	font-style: normal
-// 	font-weight: normal
-// 	font-size: 30px
-// 	//background-color: #ade8f4
-// 	//line-height: 95px
-// 	color: white
-// .dropdown
+// @keyframes nomove 
+// 	0%
+// 		left: 0%
+// 		top: 0%
+// 		width: 100%
+// 		height: 100%	
+// 		z-index: 90
+// 	99%
+// 		left: 0%
+// 		top: 0%
+// 		width: 100%
+// 		height: 100%
+// 		opacity: 100%
+// 		z-index: 90
+// 	100%
+// 		z-index: -90
+// 		left: 0%
+// 		top: 0%
+// 		width: 100%
+// 		height: 100%
+// 		opacity: 0%
 
+// .backg1
+// 	position: fixed
+// 	z-index: -99
+// 	left: 25%
+// 	background: rgb( 0, 0, 0)
+// 	animation-name: oxxo
+// 	animation-duration: 3s
+// 	animation-fill-mode: forwards
+// 	animation-timing-function: ease-in-out
+
+// .backg2
+// 	position: fixed
+// 	z-index: -98
+// 	left: 0%
+// 	background: rgb( 0, 0, 0)
+// 	animation-name: oxxo1
+// 	animation-delay: 1s
+// 	animation-duration: 2s
+// 	animation-fill-mode: forwards
+// 	animation-timing-function: ease-in-out
+
+// .backg3
+// 	position: fixed
+// 	z-index: -98
+// 	left: 75%
+// 	background: rgb( 0, 0, 0)
+// 	animation-name: oxxo1
+// 	animation-duration: 1.9s
+// 	animation-delay: 1.1s
+// 	animation-fill-mode: forwards
+// 	animation-timing-function: ease-in-out
+
+// @keyframes oxxo
+// 	0%
+// 		bottom: 110%
+// 		height: 200%
+// 		width: 50%
+// 		z-index: 99
+// 	20%
+// 		bottom: -30%
+// 		height: 200%
+// 		width: 50%
+// 		z-index: 99
+// 	80%
+// 		bottom: -30%
+// 		height: 200%
+// 		width: 50%
+// 		opacity: 100%
+// 		z-index: 99
+// 	91%
+// 		opacity: 0%
+// 		bottom: -30%
+// 		height: 200%
+// 		width: 50%
+// 		z-index: 99
+// 	100%
+// 		bottom: -30%
+// 		height: 0%
+// 		width: 50%
+// 		opacity: 0%
+// 		z-index: -99
+// @keyframes oxxo1
+// 	0%
+// 		bottom: 110%
+// 		height: 200%
+// 		width: 75%
+// 		z-index: 98
+// 	20%
+// 		z-index: 98
+// 		bottom: -30%
+// 		height: 200%
+// 		width: 75%
+// 	80%
+// 		z-index: 98
+// 		bottom: -30%
+// 		height: 200%
+// 		width: 75%
+// 		opacity: 100%
+	
+// 	90%
+// 		opacity: 0%
+// 		z-index: 98
+// 		bottom: -30%
+// 		height: 200%
+// 		width: 75%
+
+// 	100%
+// 		z-index: -98
+// 		bottom: -30%
+// 		height: 0%
+// 		width: 75%
+// 		opacity: 0%
 
 </style>
