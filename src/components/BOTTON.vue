@@ -43,8 +43,8 @@
 			.TEXT5 
 				router-link(tag="TEXT5", to="/about") > 前往瞭解
 	.entryanima
-	.runthru 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLU UNCLE》星艦即將啟航， 請儘速報名航向新星!
-	.runthru2 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLU UNCLE》星艦即將啟航， 請儘速報名航向新星!
+	.runthru 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLECU UNCLE》星艦即將啟航， 請儘速報名航向新星!
+	.runthru2 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLECU UNCLE》星艦即將啟航， 請儘速報名航向新星!
 </template>
 
 <style lang="sass">
