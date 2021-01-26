@@ -164,8 +164,8 @@
 .Banner
 	position: absolute
 	top: 20%
-	left: 19%
-	width: 60%
+	left: 20%
+	width: 59%
 	height: 15%
 	background-image: url('https://upload.cc/i1/2021/01/23/W2NqkI.png')
 	background-size: contain
@@ -356,6 +356,7 @@
 	font-size: 0px
 	z-index: 10
 	top: 0%
+	cursor: pointer
 	opacity: 0
 	transition-property: opacity, width ,height,left,font-size,color,z-index,top
 	transition-duration: 1s
@@ -407,6 +408,7 @@
 	font-size: 0px
 	z-index: 10
 	top: 0%
+	cursor: pointer
 	left: 0%
 	text-align: left
 	opacity: 0
@@ -417,6 +419,7 @@
 	-webkit-transition-duration: 1s
 	-o-transition-property: opacity, width ,height,left,font-size,color,z-index,top
 	-o-transition-duration: 1s
+
 
 .title1:hover
 	
