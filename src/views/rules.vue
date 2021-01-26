@@ -20,7 +20,7 @@
 // @ is an alias to /src
 import TOPSTUFF from '@/components/TOPSTUFF.vue'
 // import BOTTON2 from '@/components/BOTTON2.vue'
-// import entryanima from '@/components/entryanima.vue'
+import entryanima2 from '@/components/entryanima2.vue'
 import stars1 from '@/components/stars1.vue'
 import stars2 from '@/components/stars2.vue'
 import stars3 from '@/components/stars3.vue'
@@ -36,7 +36,7 @@ export default {
   components: {
     TOPSTUFF,
     // BOTTON2,
-    // entryanima,
+    entryanima2,
     stars1,
     stars2,
     stars3,

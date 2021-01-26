@@ -20,7 +20,8 @@
 	.title3 參與節目！
 		.content
 			.TEXT1 您可以透過成為大叔直接參加節目！也可以透過成為大叔製作人來為你的大叔助力！
-			.TEXT2 > 成為大叔
+			.TEXT2
+				router-link(tag="TEXT2", to="/sorry")  > 成為大叔
 			.TEXT3 
 				router-link(tag="TEXT3", to="/rules") > 成為製作人
 
@@ -39,7 +40,8 @@
 	.title5 參與？WHY ?
 		.content
 			.TEXT1 參加、助力能帶來什麼好處呢？讓我們來告訴您 !
-			.TEXT5 > 前往瞭解
+			.TEXT5 
+				router-link(tag="TEXT5", to="/about") > 前往瞭解
 	.entryanima
 	.runthru 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLU UNCLE》星艦即將啟航， 請儘速報名航向新星!
 	.runthru2 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLU UNCLE》星艦即將啟航， 請儘速報名航向新星!

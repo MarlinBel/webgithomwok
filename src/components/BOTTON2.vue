@@ -20,7 +20,7 @@
 	.flowerflax5
 	.flowerflax6
 	.joinlinkkk 
-		router-link(tag="joinlinkkk", to="/about") >>前往報名!
+		router-link(tag="joinlinkkk", to="/sorry") >>前往報名!
 		.liboxup
 		.liboxdown
 
