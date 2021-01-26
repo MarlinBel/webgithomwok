@@ -129,7 +129,7 @@
 	animation-timing-function: ease-in-out
 
 .meteor2
-	position: fixed
+	position: absolute
 	z-index: -999
 	background-image: url('https://upload.cc/i1/2021/01/25/rYJF2S.png')
 	background-size: cover
@@ -146,7 +146,7 @@
 
 	
 .meteor1
-	position: fixed
+	position: absolute
 	z-index: -999
 	background-image: url('https://upload.cc/i1/2021/01/25/rYJF2S.png')
 	background-size: cover

@@ -14,19 +14,22 @@
 		.litlblockup2
 		.litlblockdown2
 		.LINKER2
-			router-link(tag="LINKER2", to="/about") 參賽&助力
+			router-link(tag="LINKER2", to="/about") 參賽嗎?
 	.Block3
 		.litlblockup3
 		.litlblockdown3
-		.LINKER3 助力規則
+		.LINKER3
+			router-link(tag="LINKER3", to="/helpp") 助力嗎?
 	.Block4
 		.litlblockup4
 		.litlblockdown4
-		.LINKER4 報名參賽
+		.LINKER4 
+			router-link(tag="LINKER4", to="/rules") 助力規則
 	.Block5
 		.litlblockup5
 		.litlblockdown5
-		.LINKER5 相關節目
+		.LINKER5 
+			router-link(tag="LINKER5", to="/sorry") 報名參賽
 	//- .columnbak
 </template>
 
@@ -56,7 +59,7 @@
 	z-index: 9999
 	top: 2.3%
 	letter-spacing: 18px
-	left: 23.5%
+	left: 25.5%
 	opacity: 70%
 
 .LINKER3
@@ -64,24 +67,27 @@
 	z-index: 9999
 	top: 2.3%
 	letter-spacing: 20px
-	left: 44.5%
+	left: 45.5%
 	opacity: 70%
+	cursor: pointer
 
 .LINKER4
 	position: fixed
 	z-index: 9999
 	top: 2.3%
 	letter-spacing: 20px
-	left: 64.5%
+	left: 65%
+	cursor: pointer
 	opacity: 70%
 
 .LINKER5
 	position: fixed
+	cursor: pointer
 	z-index: 9999
 	top: 2.2%
 	font-size: 29px
 	letter-spacing: 20px
-	left: 84.5%
+	left: 85%
 	opacity: 70%
 	
 	

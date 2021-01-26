@@ -41,11 +41,65 @@
 			.TEXT1 參加、助力能帶來什麼好處呢？讓我們來告訴您 !
 			.TEXT5 > 前往瞭解
 	.entryanima
-
+	.runthru 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLU UNCLE》星艦即將啟航， 請儘速報名航向新星!
+	.runthru2 宇宙是由分子組成的,這群大叔---也是。 宇宙最強男團選拔《分子大叔  MOLU UNCLE》星艦即將啟航， 請儘速報名航向新星!
 </template>
 
 <style lang="sass">
 
+.runthru2
+	position: absolute
+	font-size: 20px
+	top: 45%
+	left: 150%
+	width: 100%
+	color: white
+	z-index: 80
+	letter-spacing: 5px
+	animation-name: passby2
+	animation-delay: 17s
+	animation-duration: 35s
+	animation-timing-function: linear
+	animation-play-state: running
+	animation-iteration-count: infinite
+
+
+@keyframes passby2
+	0%
+		left: 100%
+	
+	50%
+		left: 0%
+
+	100%
+		left: -100%
+
+.runthru
+	position: absolute
+	font-size: 20px
+	top: 45%
+	left: 25%
+	color: white
+	z-index: 80
+	width: 100%
+	animation-name: passby1
+	letter-spacing: 5px
+	animation-duration: 35s
+	animation-timing-function: linear
+	animation-play-state: running
+	animation-iteration-count: infinite
+
+
+@keyframes passby1
+	0%
+		left: 100%
+	
+	
+	50%
+		left: 0%
+
+	100%
+		left: -100%
 
 
 .titleFlex
@@ -135,7 +189,7 @@
 	opacity: 100%
 	border-radius: 50px
 	// background-image: url('https://upload.cc/i1/2020/12/21/VgjUdM.jpg')
-	z-index: 10
+	z-index: 99
 	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 1s
 	transition-timing-function: ease-out
@@ -158,7 +212,7 @@
 	opacity: 100%
 	border-radius: 50px
 	// background-image: url('https://upload.cc/i1/2020/12/21/VgjUdM.jpg')
-	z-index: 10
+	z-index: 99
 	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 1s
 	transition-timing-function: ease-out
@@ -181,7 +235,7 @@
 	opacity: 100%
 	border-radius: 50px
 	// background-image: url('https://upload.cc/i1/2020/12/21/VgjUdM.jpg')
-	z-index: 10
+	z-index: 99
 	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 1s
 	transition-timing-function: ease-out
@@ -204,7 +258,7 @@
 	opacity: 100%
 	border-radius: 50px
 	// background-image: url('https://upload.cc/i1/2020/12/21/VgjUdM.jpg')
-	z-index: 10
+	z-index: 99
 	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 1s
 	transition-timing-function: ease-out
@@ -227,7 +281,7 @@
 	opacity: 100%
 	border-radius: 50px
 	// background-image: url('https://upload.cc/i1/2020/12/21/VgjUdM.jpg')
-	z-index: 10
+	z-index: 99
 	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 1s
 	transition-timing-function: ease-out
@@ -364,7 +418,7 @@
 
 .title1:hover
 	
-	z-index: 25
+	z-index: 99
 	opacity: 100%
 	top: 60%
 	color: rgb( 255, 255, 255)
@@ -390,7 +444,7 @@
 		
 .title2:hover
 	color: #fcefb4
-	z-index: 25
+	z-index: 99
 	opacity: 100%
 	top: 60%
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px
@@ -420,7 +474,7 @@
 
 .title3:hover
 	
-	z-index: 25
+	z-index: 99
 	opacity: 100%
 	top: 100%
 	color: #caf0f8
@@ -456,7 +510,7 @@
 
 .title4:hover
 	color: #ffcad4
-	z-index: 25
+	z-index: 99
 	opacity: 100%
 	top: 100%
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px
@@ -490,7 +544,7 @@
 
 .title5:hover
 	
-	z-index: 25
+	z-index: 99
 	opacity: 100%
 	top: 140%
 	color: #edc4b3

@@ -21,6 +21,9 @@
 	.flowerflax6
 	.joinlinkkk 
 		router-link(tag="joinlinkkk", to="/about") >>前往報名!
+		.liboxup
+		.liboxdown
+
 </template>
 
 <style lang="sass">
@@ -34,6 +37,72 @@
 	left: 30%
 	z-index: 71
 	opacity: 100%
+	letter-spacing: 30px
+	color: rgb( 210, 210, 210)
+	z-index: 99
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.liboxup
+	position: absolute
+	background: rgb( 210, 210, 210)
+	z-index: 69
+	// border: 1pxs solid red
+	width: 100%
+	height: 100%
+	top: 0%
+	left: 0%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+.liboxdown
+	position: absolute
+	background: rgb( 210, 210, 210)
+	z-index: 69
+	width: 100%
+	// border: 1px solid red
+	height: 100%
+	top: 0%
+	left: 0%
+	opacity: 0%
+	transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	transition-duration: 0.6s
+	transition-timing-function: ease-out
+	-webkit-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-webkit-transition-duration: 0.6s
+	-o-transition-property: opacity, width ,height,left,font-size,color,top,z-index
+	-o-transition-duration: 0.6s
+
+.joinlinkkk:hover
+	.liboxdown
+		opacity: 80%
+		height: 10%
+		top: 90%
+		// border: 1px solid red
+	.liboxup
+		opacity: 80%
+		height: 10%
+		top: 0%
+
+// .joinlinkkk
+// 	cursor: pointer
+// 	position: absolute
+// 	font-size: 60px
+// 	color: rgb( 220, 220, 220)
+// 	top: 330%
+// 	letter-spacing: 40px
+// 	left: 30%
+// 	z-index: 71
+// 	opacity: 100%
 
 .BOTTON2
 	font-family: Microsoft YaHei
@@ -260,8 +329,8 @@
 	position: absolute
 	background: rgba( 220, 220, 220, 0)
 	width: 100%
-	height: 100%
-	border-radius: 1000px
+	height: 90%
+	// border-radius: 1000px
 	top: 215%
 	// border: 1px solid red
 	left: 0%

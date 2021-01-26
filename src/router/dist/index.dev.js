@@ -47,6 +47,28 @@ var routes = [{
       return _interopRequireWildcard(require('../views/rules.vue'));
     });
   }
+}, {
+  path: '/helpp',
+  name: 'helpp',
+  // route level code-splitting
+  // this generates a separate chunk (about.[hash].js) for this route
+  // which is lazy-loaded when the route is visited.
+  component: function component() {
+    return Promise.resolve().then(function () {
+      return _interopRequireWildcard(require('../views/helpp.vue'));
+    });
+  }
+}, {
+  path: '/sorry',
+  name: 'sorry',
+  // route level code-splitting
+  // this generates a separate chunk (about.[hash].js) for this route
+  // which is lazy-loaded when the route is visited.
+  component: function component() {
+    return Promise.resolve().then(function () {
+      return _interopRequireWildcard(require('../views/sorry.vue'));
+    });
+  }
 }];
 var router = new _vueRouter["default"]({
   routes: routes
