@@ -128,7 +128,7 @@
 	left: 50%
 	letter-spacing: 10px
 	color: rgb( 210, 210, 210)
-	z-index: 70
+	z-index: 99
 	transition-property: opacity, width ,height,left,font-size,color,top,z-index
 	transition-duration: 0.6s
 	transition-timing-function: ease-out
@@ -154,7 +154,7 @@
 	width: 7%
 	height: 16%
 	top: 75%
-	z-index: 75
+	z-index: 100
 	color: rgb( 210, 210, 210)
 
 .rulecon:hover~.helplink
